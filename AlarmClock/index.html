@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+</head>
+
+<body>
+    <h1>ALARM</h1>
+    <form action="">
+            <div class="box">
+                <label for="inputTime">Set Time</label>
+                <input name="inputTime" id="inputTime" type="time" step="3600" min="00:00" list="limittimeslist">
+            </div>
+            <div class="box">
+                <input id="setTime" type="submit" value="Set">
+            </div>
+    </form>
+    <!-- <datalist id="limittimeslist">
+        <option value="06:40">
+        <option value="08:00">
+    </datalist> -->
+
+    <div id="confirm" class=""></div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
