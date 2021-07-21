@@ -22,10 +22,9 @@ setTime.addEventListener('click', (e)=>{
         inputTime.value= "";
         text.innerHTML = "";
     }, 8000);
-
 });
 
-var play = window.setInterval(playsound, 10000);
+var play = window.setInterval(playsound, 1000);
 
 function playsound(){
     let getTime = localStorage.getItem("Alarm");
