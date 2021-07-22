@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>API Tester</title>
+</head>
+
+<body>
+    <header>
+        <h1>API Tester</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="" id="fillform">
+
+                <div>
+                    <label for="url">URL</label>
+                    <input type="text" id="url" name="url" placeholder="Enter a URL">
+                </div>
+
+                <div id="request">
+                    <p>Request Type: </p>
+                    <div>
+                        <input type="radio" id="get" name="requestType">
+                        <label for="get">Get</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="post" name="requestType">
+                        <label for="post">Post</label>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <p>Content Type: </p>
+                    <div>
+                        <input type="radio" id="json" name="contentType">
+                        <label for="json">JSON</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="custom" name="contentType">
+                        <label for="custom">Custom</label>
+                    </div>
+                </div>
+
+                <div id="parameterBox" class="parameterBox">
+
+                    <div>
+                        <label for="url">Parameter 1</label>
+                        <input type="text" id="inputkey" placeholder="Enter Parameter Key">
+                        <input type="text" id="inputvalue" placeholder="Enter Parameter Value">
+                    </div>
+                    <button id="addParam">+</button>
+
+                    <div id="params"></div>
+                </div>
+
+                <div id="jsonBox" class="jsonBox">
+                    <label for="reqJson">Enter Request JSON</label>
+                    <textarea name="reqJson" id="reqJson" cols="36" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div>
+                    <label for="response">Response</label>
+                    <textarea name="response" id="response" cols="36" rows="3" placeholder="Response"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
