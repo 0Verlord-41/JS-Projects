@@ -53,14 +53,16 @@
                         <label for="url">Parameter 1</label>
                         <input type="text" id="inputkey" placeholder="Enter Parameter Key">
                         <input type="text" id="inputvalue" placeholder="Enter Parameter Value">
+                        <button id="addParam">+</button>
                     </div>
-                    <button id="addParam">+</button>
 
-                    <div id="params"></div>
+                    <div id="params">
+                        
+                    </div>
                 </div>
 
                 <div id="jsonBox" class="jsonBox">
-                    <label for="reqJson">Enter Request JSON</label>
+                    <label id="centerLabel" for="reqJson">Enter Request JSON</label>
                     <textarea name="reqJson" id="reqJson" cols="36" rows="3"></textarea>
                 </div>
 
@@ -69,7 +71,7 @@
                 </div>
 
                 <div>
-                    <label for="response">Response</label>
+                    <label id="centerLabel" for="response">Output</label>
                     <textarea name="response" id="response" cols="36" rows="3" placeholder="Response"></textarea>
                 </div>
 

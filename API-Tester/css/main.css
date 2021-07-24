@@ -14,8 +14,31 @@ main{
     /* align-items: center; */
 }
 
+.container{
+    max-width: 80%;
+}
+
 .fillform{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.parameterBox{
+    display: flex;
+    flex-direction: column;
+}
+
+#centerLabel{
+    position: relative;
+    top: -38px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    #centerLabel{
+        position: relative;
+        top: 0px;
+    }   
 }
