@@ -26,11 +26,11 @@
                 <div id="request">
                     <p>Request Type: </p>
                     <div>
-                        <input type="radio" id="get" name="requestType">
+                        <input type="radio" id="get" name="requestType" value="Get">
                         <label for="get">Get</label>
                     </div>
                     <div>
-                        <input type="radio" id="post" name="requestType">
+                        <input type="radio" id="post" name="requestType" value="Post">
                         <label for="post">Post</label>
                     </div>
                 </div>
@@ -38,11 +38,11 @@
                 <div id="content">
                     <p>Content Type: </p>
                     <div>
-                        <input type="radio" id="json" name="contentType">
+                        <input type="radio" id="json" name="contentType" value="json">
                         <label for="json">JSON</label>
                     </div>
                     <div>
-                        <input type="radio" id="custom" name="contentType">
+                        <input type="radio" id="custom" name="contentType" value="custom">
                         <label for="custom">Custom</label>
                     </div>
                 </div>
@@ -51,28 +51,29 @@
 
                     <div>
                         <label for="url">Parameter 1</label>
-                        <input type="text" id="inputkey" placeholder="Enter Parameter Key">
-                        <input type="text" id="inputvalue" placeholder="Enter Parameter Value">
+                        <input type="text" id="inputkey1" placeholder="Enter Parameter Key">
+                        <input type="text" id="inputvalue1" placeholder="Enter Parameter Value">
                         <button id="addParam">+</button>
                     </div>
 
                     <div id="params">
-                        
                     </div>
                 </div>
 
                 <div id="jsonBox" class="jsonBox">
-                    <label id="centerLabel" for="reqJson">Enter Request JSON</label>
+                    <label class="alignLabel" for="reqJson">Enter Request JSON</label>
                     <textarea name="reqJson" id="reqJson" cols="36" rows="3"></textarea>
                 </div>
 
                 <div>
-                    <button type="submit">Submit</button>
+                    <button id="submit" type="submit">Submit</button>
                 </div>
 
                 <div>
-                    <label id="centerLabel" for="response">Output</label>
-                    <textarea name="response" id="response" cols="36" rows="3" placeholder="Response"></textarea>
+                    <label class="" for="responseJsonText">Output</label>
+                    <!-- <textarea name="response" id="response" cols="36" rows="3" placeholder="Response"></textarea> -->
+                    <pre id='responsePre'
+                        class="language-javascript"> <code id='responsePrism' class="language-javascript"> Your response will appear here </code> </pre>
                 </div>
 
             </form>
@@ -80,6 +81,7 @@
     </main>
 
     <script src="js/index.js"></script>
+    <script src="js/prism.js"></script>
 </body>
 
 </html>

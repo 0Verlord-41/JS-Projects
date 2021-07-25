@@ -30,14 +30,14 @@ main{
     flex-direction: column;
 }
 
-#centerLabel{
+.alignLabel{
     position: relative;
     top: -38px;
 }
 
 @media only screen and (max-width: 600px){
     
-    #centerLabel{
+    .alignLabel{
         position: relative;
         top: 0px;
     }   
