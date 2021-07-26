@@ -85,7 +85,7 @@ submit.addEventListener('click', (e) => {
     console.log(contentType);
     console.log(data);
 
-    if (requestType == 'GET') {
+    if (requestType == 'Get') {
         fetch(url, {
             method: 'GET',
         })

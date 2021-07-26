@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/prism.css" rel="stylesheet">
     <title>API Tester</title>
 </head>
 
@@ -69,11 +70,10 @@
                     <button id="submit" type="submit">Submit</button>
                 </div>
 
-                <div>
+                <div class="output">
                     <label class="" for="responseJsonText">Output</label>
                     <!-- <textarea name="response" id="response" cols="36" rows="3" placeholder="Response"></textarea> -->
-                    <pre id='responsePre'
-                        class="language-javascript"> <code id='responsePrism' class="language-javascript"> Your response will appear here </code> </pre>
+                    <pre id='responsePre' class="language-javascript"> <code id='responsePrism' class="language-javascript"> Your response will appear here </code> </pre>
                 </div>
 
             </form>

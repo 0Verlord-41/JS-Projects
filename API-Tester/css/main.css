@@ -35,6 +35,10 @@ main{
     top: -38px;
 }
 
+#responsePre{
+    max-height: 300px;
+}
+
 @media only screen and (max-width: 600px){
     
     .alignLabel{
