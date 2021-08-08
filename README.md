@@ -12,3 +12,6 @@
 
  ### ResumeScanner
  - https://0verlord-41.github.io/JS-Projects/ResumeScanner/
+
+ ### Carousel
+ - https://0verlord-41.github.io/JS-Projects/Carousel/
