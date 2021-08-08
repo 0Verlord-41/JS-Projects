@@ -1,0 +1,95 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15x;
+}
+
+.slider{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.slide{
+    /* display: none; */
+}
+
+/* img {vertical-align: middle;} */
+
+.numbertext{ 
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 8px 12px;
+    top: 0;
+}
+
+.caption{
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 8px 12px; 
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
