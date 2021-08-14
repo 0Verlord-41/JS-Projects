@@ -5,9 +5,13 @@ body{
     font-size: 15x;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .sidebar {
-  margin: 0;
-  padding: 0;
   width: 200px;
   background-color: #423F3E;
   position: fixed;

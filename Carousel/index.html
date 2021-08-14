@@ -17,33 +17,35 @@
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
     </div>
+    <div class="section">
+    
+        <div class="slider">
+            <div class="slide fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/photo-1000-500-1.jpeg" alt="">
+                <div class="caption">Text</div>
+            </div>
+            <div class="slide fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/photo-1000-500-2.jpeg" alt="">
+                <div class="caption">Text</div>
+            </div>
+            <div class="slide fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/photo-1000-500-3.jpeg" alt="">
+                <div class="caption">Text</div>
+            </div>
+    
+            <a class="prev" onclick="slideit(-1)">&#10094;</a>
+            <a class="next" onclick="slideit(1)">&#10095;</a>
 
-    <div class="slider">
-        <div class="slide fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/photo-1000-500-1.jpeg" alt="">
-            <div class="caption">Text</div>
+            <div style="text-align: center; position: absolute; left: 48%;">
+                <span class="dot" onclick="current(1)"></span>
+                <span class="dot" onclick="current(2)"></span>
+                <span class="dot" onclick="current(3)"></span>
+            </div>
         </div>
-        <div class="slide fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/photo-1000-500-2.jpeg" alt="">
-            <div class="caption">Text</div>
-        </div>
-        <div class="slide fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/photo-1000-500-3.jpeg" alt="">
-            <div class="caption">Text</div>
-        </div>
-
-        <a class="prev" onclick="slideit(-1)">&#10094;</a>
-        <a class="next" onclick="slideit(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align: center;">
-        <span class="dot" onclick="current(1)"></span>
-        <span class="dot" onclick="current(2)"></span>
-        <span class="dot" onclick="current(3)"></span>
+        
     </div>
 
     <script src="js/index.js"></script>
